@@ -1,0 +1,885 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Britney Krabbendam · Game &amp; VR Developer</title>
+  <meta name="description" content="Portfolio of Britney Krabbendam.." />
+  <meta property="og:title" content="Britney Krabbendam · Game & VR developer" />
+  <meta property="og:description" content="" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Fraunces:ital,opsz,wght@1,9..144,400..700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./src/index.css" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            pink: {
+              50: '#fdf2f8',
+              100: '#fce7f3',
+              200: '#fbcfe8',
+              300: '#f472b6',
+              400: '#f472b6',
+              500: '#ec4899',
+              600: '#db2777',
+            }
+          },
+          fontFamily: {
+            heading: ['Outfit', 'Plus Jakarta Sans', 'sans-serif'],
+            body: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['Space Mono', 'monospace'],
+            serif: ['Fraunces', 'Georgia', 'serif'],
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-[#0d0c11] text-[#f6f3f8] antialiased selection:bg-pink-500/25 selection:text-pink-200 min-h-screen flex flex-col font-body">
+
+<!-- Top Fixed Navigation -->
+<header class="fixed top-0 w-full z-40 bg-[#0e0d12]/90 backdrop-blur-md border-b border-[#2c2838]">
+  <div class="max-w-[1140px] mx-auto px-6 h-18 py-4 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="#" id="nav-logo" class="flex items-center gap-3 text-left group">
+          <span class="w-8 h-8 rounded-full bg-pink-500/15 border border-pink-400/30 flex items-center justify-center text-pink-300 text-sm font-semibold group-hover:scale-105 transition-transform">
+            BK
+          </span>
+      <div>
+            <span class="font-heading font-semibold text-lg text-[#f6f3f8] tracking-tight group-hover:text-pink-300 transition-colors block leading-tight">
+              Britney Krabbendam
+            </span>
+        <span class="text-xs text-[#7e788b]">Game &amp; VR Developer</span>
+      </div>
+    </a>
+
+    <!-- links -->
+    <div class="flex items-center gap-6 sm:gap-8">
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-[#a7a1b3]">
+        <a href="#projects" class="hover:text-[#f6f3f8] transition-colors">Projects</a>
+        <a href="#skills" class="hover:text-[#f6f3f8] transition-colors">Skills</a>
+        <a href="#contact" class="hover:text-[#f6f3f8] transition-colors">Contact</a>
+      </nav>
+
+      <!-- Contact  -->
+      <a href="mailto:krabritney@gmail.com?subject=Hi%20Britney" class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-full bg-[#1b1822] hover:bg-pink-500/15 hover:text-pink-300 text-[#f6f3f8] border border-[#2e2a3b] hover:border-pink-400/40 transition-all duration-150 cursor-pointer">
+        Get in touch
+      </a>
+
+      <!-- hamburgi -->
+      <button id="mobile-menu-toggle" class="md:hidden p-2 text-[#a7a1b3] hover:text-white cursor-pointer" aria-label="Toggle menu">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-[#16141c] border-b border-[#2c2838] px-6 py-4 flex flex-col gap-3 text-sm font-medium text-[#a7a1b3]">
+    <a href="#projects" class="py-1.5 hover:text-white mobile-link">Projects</a>
+    <a href="#skills" class="py-1.5 hover:text-white mobile-link">Skills</a>
+    <a href="#contact" class="py-1.5 hover:text-white mobile-link">Contact</a>
+    <a href="mailto:krabritney@gmail.com?subject=Hi%20Britney" class="w-full mt-2 py-2.5 rounded-full bg-[#f472b6] text-[#120f17] font-semibold text-center cursor-pointer">
+      Get in touch
+    </a>
+  </div>
+</header>
+
+<!-- main -->
+<main class="w-full pt-20 flex-grow">
+
+  <section class="relative overflow-hidden border-b border-[#2c2838]">
+    <img src="src/header.png" alt="" aria-hidden="true" class="absolute inset-0 h-full w-full object-cover object-center opacity-45" />
+    <div class="absolute inset-0 bg-gradient-to-r from-[#0d0c11] via-[#0d0c11]/85 to-[#0d0c11]/25" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0d0c11] via-transparent to-[#0d0c11]/45" aria-hidden="true"></div>
+
+    <div class="relative max-w-[1140px] mx-auto px-6 py-16 md:py-24">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+      <!-- Left: Hero Text -->
+      <div class="lg:col-span-12 max-w-3xl">
+        <p class="font-mono text-[11px] sm:text-xs uppercase tracking-[0.18em] text-[#8b8598]">
+          Rotterdam &middot; final year CMGT &middot; looking for a graduation internship
+        </p>
+
+        <h1 class="mt-6 font-heading font-semibold text-4xl sm:text-5xl lg:text-[4.1rem] text-[#f6f3f8] tracking-tight leading-[1.04]">
+          Portfolio of
+          <span class="font-serif italic font-normal text-pink-300">Britney Krabbendam</span>.
+        </h1>
+
+        <div class="mt-5 flex items-center gap-3">
+          <span class="w-1.5 h-1.5 rounded-full bg-pink-400 shrink-0 animate-pulse" aria-hidden="true"></span>
+          <div class="rotator font-mono text-xs sm:text-sm text-[#c9c3d6]">
+            <span>Pok&eacute;mon plushie collector</span>
+            <span>Coffee enjoyer</span>
+            <span>Gym enthusiast</span>
+            <span>Game lover</span>
+          </div>
+        </div>
+
+        <div class="mt-7 space-y-4 text-[#a7a1b3] text-base sm:text-lg leading-relaxed">
+          <p>
+            Hi! I'm <span class="text-[#f6f3f8]">Britney Krabbendam</span>, a game and VR developer.
+          </p>
+          <p>
+            I'm in my final year of Creative Media &amp; Game Technologies at Hogeschool Rotterdam, and currently im doing my minor where i am the lead technical
+            programmer on a horror game with fifteen other people. Outside of school im probably playing Pok&eacute;mon,
+            raiding in WoW, or starting a Unity prototype I'll finish eventually.
+          </p>
+        </div>
+
+        <div class="mt-8 flex flex-wrap items-center gap-4">
+          <a href="#projects" class="px-6 py-3 rounded-full bg-[#f472b6] hover:bg-[#f687b3] text-[#120f17] font-semibold text-sm transition-all shadow-sm hover:scale-[1.02] active:scale-95 inline-flex items-center gap-2 cursor-pointer">
+            <span>See what I made</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+          </a>
+          <a href="mailto:krabritney@gmail.com?subject=Hi%20Britney" class="px-6 py-3 rounded-full bg-transparent hover:bg-[#1b1822] text-[#f6f3f8] border border-[#2e2a3b] hover:border-[#403b50] font-medium text-sm transition-colors">
+            Mail me
+          </a>
+        </div>
+
+
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <section class="border-t border-[#2c2838] bg-[#110f17]/40 py-20" id="projects">
+    <div class="max-w-[1140px] mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-5">
+        <div class="max-w-xl">
+          <h2 class="font-heading font-semibold text-3xl sm:text-4xl text-[#f6f3f8] tracking-tight">
+            Things I made
+          </h2>
+          <p class="text-[#a7a1b3] text-sm leading-relaxed mt-2">
+            Released games and a VR project from my internship
+          </p>
+        </div>
+
+        <a href="https://github.com/Zoruasy" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-[#a7a1b3] hover:text-pink-300 transition-colors inline-flex items-center gap-1.5 shrink-0">
+          <span>Everything else is on GitHub</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Project 0: work in progress -->
+        <div class="rounded-2xl bg-[#16141c] border border-pink-500/25 overflow-hidden hover:border-pink-400/50 transition-all duration-300 flex flex-col group shadow-lg">
+          <a href="https://github.com/Zoruasy/Horror-Game-Project" target="_blank" rel="noopener noreferrer"
+             class="project-card-launch relative block w-full aspect-video bg-[#14121a] border-b border-[#2c2838] overflow-hidden"
+             aria-label="Horror Game Project, work in progress, opens the repository on GitHub">
+            <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_25%_20%,rgba(236,72,153,0.22),transparent_60%),radial-gradient(ellipse_at_80%_85%,rgba(120,60,180,0.20),transparent_55%)]" aria-hidden="true"></div>
+            <div class="absolute inset-0 opacity-[0.06] bg-[linear-gradient(#f6f3f8_1px,transparent_1px),linear-gradient(90deg,#f6f3f8_1px,transparent_1px)] bg-[size:32px_32px]" aria-hidden="true"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center gap-3 text-center px-6">
+              <span class="px-3 py-1 rounded-full bg-pink-500/15 border border-pink-500/35 text-pink-300 text-[11px] font-mono uppercase tracking-wider">
+                Work in progress
+              </span>
+              <p class="font-heading font-semibold text-2xl text-[#f6f3f8] tracking-tight">Horror Game Project</p>
+              <p class="text-xs text-[#9a94a8] font-mono">Lead technical programmer &middot; team of 15</p>
+            </div>
+          </a>
+
+          <div class="p-6 sm:p-7 flex flex-col justify-between flex-grow">
+            <div class="space-y-3">
+              <div class="flex flex-wrap items-center gap-2">
+                <h3 class="font-heading font-semibold text-xl text-[#f6f3f8]">Horror Game Project</h3>
+                <span class="px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider rounded-full bg-pink-500/15 text-pink-300 border border-pink-500/25">In progress</span>
+              </div>
+              <p class="text-[#a7a1b3] text-sm leading-relaxed">
+                Fifteen people, one horror game, and im the one keeping the tech from falling apart. As lead technical
+                programmer I set up the project structure and URP, build the systems other features hang off, (programming ofc), review pull
+                requests, and make sure the repo and builds still work for everyone the night before a deadline. :D
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="px-2.5 py-1 text-xs rounded-full bg-pink-500/15 text-pink-300 border border-pink-500/25">Lead Technical Programmer</span>
+                <span class="px-2.5 py-1 text-xs rounded-full bg-[#1f1c29] text-[#a7a1b3] border border-[#2e2a3c]">Unity</span>
+                <span class="px-2.5 py-1 text-xs rounded-full bg-[#1f1c29] text-[#a7a1b3] border border-[#2e2a3c]">URP</span>
+                <span class="px-2.5 py-1 text-xs rounded-full bg-[#1f1c29] text-[#a7a1b3] border border-[#2e2a3c]">Horror</span>
+                <span class="px-2.5 py-1 text-xs rounded-full bg-[#1f1c29] text-[#a7a1b3] border border-[#2e2a3c]">Team of 15</span>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-[#2c2838] flex flex-wrap items-center gap-5 text-sm font-medium">
+              <a href="https://github.com/Zoruasy/Horror-Game-Project" target="_blank" rel="noopener noreferrer" class="text-pink-300 hover:text-pink-200 transition-colors inline-flex items-center gap-1.5">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                <span>Repository</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 1 -->
+        <div class="rounded-2xl bg-[#16141c] border border-[#2c2838] overflow-hidden hover:border-[#403b50] transition-all duration-300 flex flex-col group shadow-lg">
+          <a href="https://koala-games.itch.io/meat-me-at-my-bakery" target="_blank" rel="noopener noreferrer"
+             class="project-card-launch relative block w-full aspect-video bg-[#1a1723] border-b border-[#2c2838] overflow-hidden"
+             aria-label="Meat me at my bakery, open the project on Itch.io">
+            <img src="src/Meatme.png" alt="Meat me at my bakery, hand-drawn 2D action game" decoding="async" />
+          </a>
+
+          <div class="p-6 sm:p-7 flex flex-col justify-between flex-grow">
+            <div class="space-y-3">
+              <h3 class="font-heading font-semibold text-xl text-[#f6f3f8]">Meat me at my bakery</h3>
+              <p class="text-[#a7a1b3] text-sm leading-relaxed">
+                A hand drawn 2D game about baking pies out of monsters. Gothic, fast, and a little gross in
+                the best way: you explore, fight strange creatures and collect ingredients.
+              </p>
+              <p class="text-[#a7a1b3] text-sm leading-relaxed">
+                I was the designer and one of the programmer on it. Sketching the mechanics, writing them down so the team could actually build
+                them, and running playtests until the parts that weren't fun got cut.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="px-2.5 py-1 text-xs rounded-full bg-[#1f1c29] text-[#a7a1b3] border border-[#2e2a3c]">Unity</span>
+                <span class="px-2.5 py-1 text-xs rounded-full bg-[#1f1c29] text-[#a7a1b3] border border-[#2e2a3c]">2D Mobile Game</span>
+                <span class="px-2.5 py-1 text-xs rounded-full bg-[#1f1c29] text-[#a7a1b3] border border-[#2e2a3c]">Game Designer</span>
+                <span class="px-2.5 py-1 text-xs rounded-full bg-[#1f1c29] text-[#a7a1b3] border border-[#2e2a3c]">Playtesting</span>
+                <span class="px-2.5 py-1 text-xs rounded-full bg-[#1f1c29] text-[#a7a1b3] border border-[#2e2a3c]">Programmer</span>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-[#2c2838] flex flex-wrap items-center gap-5 text-sm font-medium">
+              <a href="https://koala-games.itch.io/meat-me-at-my-bakery" target="_blank" rel="noopener noreferrer" class="text-[#a7a1b3] hover:text-[#f6f3f8] transition-colors inline-flex items-center gap-1.5">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                <span>Play on Itch.io</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2-->
+        <div class="rounded-2xl bg-[#16141c] border border-[#2c2838] overflow-hidden hover:border-[#403b50] transition-all duration-300 flex flex-col group shadow-lg">
+          <a href="https://github.com/Zoruasy/VR-ACT" target="_blank" rel="noopener noreferrer"
+             class="project-card-launch relative block w-full aspect-video bg-[#1a1723] border-b border-[#2c2838] overflow-hidden"
+             aria-label="VR ACT meditation, open the repository on GitHub">
+            <img src="src/vr act.png" alt="VR ACT meditation, Unity VR experience" decoding="async" />
+          </a>
+
+          <div class="p-6 sm:p-7 flex flex-col justify-between flex-grow">
+            <div class="space-y-3">
+              <h3 class="font-heading font-semibold text-xl text-[#f6f3f8]">VR ACT meditation</h3>
+              <span class="block text-xs font-mono text-[#7e788b]">Internship project &middot; VR &middot; Unity</span>
+              <p class="text-[#a7a1b3] text-sm leading-relaxed">
+                VR ACT translates to Acceptance and Commitment Therapy into a physical VR experience for students dealing
+                with stress and anxiety. I made it during my internship: a calm, car ride in which you are
+                invited to sit, look around and reflect, not told what to do.
+              </p>
+              <p class="text-[#a7a1b3] text-sm leading-relaxed">
+                I built it in Unity with URP, XR Interaction Toolkit and OpenXR: the buttons and their feedback, the radio
+                and audio manager, the fade in around the camera, and a spawn point that waits for tracking before it
+                drops you in. Comfort steered everything. The car never moves, lighting is baked, assets are
+                low poly, and after talking to a psychologist we cut the lobby entirely.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="px-2.5 py-1 text-xs rounded-full bg-[#1f1c29] text-[#a7a1b3] border border-[#2e2a3c]">Internship</span>
+                <span class="px-2.5 py-1 text-xs rounded-full bg-[#1f1c29] text-[#a7a1b3] border border-[#2e2a3c]">Unity</span>
+                <span class="px-2.5 py-1 text-xs rounded-full bg-[#1f1c29] text-[#a7a1b3] border border-[#2e2a3c]">URP</span>
+                <span class="px-2.5 py-1 text-xs rounded-full bg-[#1f1c29] text-[#a7a1b3] border border-[#2e2a3c]">XR Interaction Toolkit</span>
+                <span class="px-2.5 py-1 text-xs rounded-full bg-[#1f1c29] text-[#a7a1b3] border border-[#2e2a3c]">OpenXR</span>
+                <span class="px-2.5 py-1 text-xs rounded-full bg-[#1f1c29] text-[#a7a1b3] border border-[#2e2a3c]">C#</span>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-[#2c2838] flex flex-wrap items-center gap-5 text-sm font-medium">
+              <a href="https://github.com/Zoruasy/VR-ACT" target="_blank" rel="noopener noreferrer" class="text-[#a7a1b3] hover:text-[#f6f3f8] transition-colors inline-flex items-center gap-1.5">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                <span>Repository</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="rounded-2xl bg-[#16141c] border border-[#2c2838] overflow-hidden hover:border-[#403b50] transition-all duration-300 flex flex-col group shadow-lg">
+          <a href="https://www.youtube.com/watch?v=PW2ryMzk7ks" target="_blank" rel="noopener noreferrer"
+             class="project-card-launch relative block w-full aspect-video bg-[#1a1723] border-b border-[#2c2838] overflow-hidden"
+             aria-label="One Last Visit, liminal horror game, watch the video on YouTube">
+            <img src="src/fear.png" alt="Liminal horror game in Unity, scene from the video" decoding="async" />
+            <div class="thumb-hover pointer-events-none absolute inset-0 z-10 flex flex-col items-center justify-center gap-2 px-6 text-center bg-[#0d0c11]/80 backdrop-blur-[2px]">
+              <span class="w-11 h-11 rounded-full bg-[#f472b6] text-[#120f17] flex items-center justify-center shadow-md" aria-hidden="true">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5.14v13.72c0 .8.87 1.3 1.56.9l10.8-6.86a1.05 1.05 0 000-1.8L9.56 4.24A1.05 1.05 0 008 5.14z"></path></svg>
+              </span>
+              <p class="font-heading font-semibold text-lg text-[#f6f3f8] leading-tight">Watch on YouTube</p>
+              <p class="text-xs text-[#c9c3d6]">&ldquo;What if fear came from something else?&rdquo;</p>
+            </div>
+          </a>
+
+          <div class="p-6 sm:p-7 flex flex-col justify-between flex-grow">
+            <div class="space-y-3">
+              <h3 class="font-heading font-semibold text-xl text-[#f6f3f8]">One Last Visit</h3>
+              <span class="block text-xs font-mono text-[#7e788b]">One-person project &middot; Unity 6</span>
+              <p class="text-[#a7a1b3] text-sm leading-relaxed">
+                A liminal horror prototype set in an abandoned indoor playground, made on my own from the first scene to
+                the last sound. It's the place you remember, just empty and slightly wrong. No jump scares, only
+                lighting, sound and small events: a dinosaur that slowly turns, balls that wobble as you walk past.
+              </p>
+              <p class="text-[#a7a1b3] text-sm leading-relaxed">
+                I built it in Unity 6: the player controller, an interaction system for doors, levers, pickups and the
+                flashlight, trigger-based audio and room events, and a checklist. Physics stayed deliberately cheap: wobbling balls instead of a simulation. The project was on Git LFS from
+                the first commit.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="px-2.5 py-1 text-xs rounded-full bg-[#1f1c29] text-[#a7a1b3] border border-[#2e2a3c]">One-person project</span>
+                <span class="px-2.5 py-1 text-xs rounded-full bg-[#1f1c29] text-[#a7a1b3] border border-[#2e2a3c]">Unity 6</span>
+                <span class="px-2.5 py-1 text-xs rounded-full bg-[#1f1c29] text-[#a7a1b3] border border-[#2e2a3c]">Git LFS</span>
+                <span class="px-2.5 py-1 text-xs rounded-full bg-[#1f1c29] text-[#a7a1b3] border border-[#2e2a3c]">Liminal horror</span>
+              </div>
+            </div>
+            <div class="pt-6 mt-6 border-t border-[#2c2838] flex flex-wrap items-center gap-5 text-sm font-medium">
+              <a href="https://www.youtube.com/watch?v=PW2ryMzk7ks" target="_blank" rel="noopener noreferrer"
+                 class="text-pink-300 hover:text-pink-200 transition-colors inline-flex items-center gap-1.5">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <span>Watch on YouTube</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="rounded-2xl bg-[#16141c] border border-[#2c2838] overflow-hidden hover:border-[#403b50] transition-all duration-300 flex flex-col group shadow-lg">
+          <a href="https://www.youtube.com/watch?v=1tsdaUhbhr8" target="_blank" rel="noopener noreferrer"
+             class="project-card-launch relative block w-full aspect-video bg-[#1a1723] border-b border-[#2c2838] overflow-hidden"
+             aria-label="UE Backrooms, watch the video on YouTube">
+            <img src="src/ue.png" alt="UE Backrooms, Unreal Engine backrooms environment" decoding="async" />
+            <div class="thumb-hover pointer-events-none absolute inset-0 z-10 flex flex-col items-center justify-center gap-2 px-6 text-center bg-[#0d0c11]/80 backdrop-blur-[2px]">
+              <span class="w-11 h-11 rounded-full bg-[#f472b6] text-[#120f17] flex items-center justify-center shadow-md" aria-hidden="true">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5.14v13.72c0 .8.87 1.3 1.56.9l10.8-6.86a1.05 1.05 0 000-1.8L9.56 4.24A1.05 1.05 0 008 5.14z"></path></svg>
+              </span>
+              <p class="font-heading font-semibold text-lg text-[#f6f3f8] leading-tight">Watch on YouTube</p>
+              <p class="text-xs text-[#c9c3d6]">Unreal Engine &middot; one-person project</p>
+            </div>
+          </a>
+
+          <div class="p-6 sm:p-7 flex flex-col justify-between flex-grow">
+            <div class="space-y-3">
+              <h3 class="font-heading font-semibold text-xl text-[#f6f3f8]">UE Backrooms</h3>
+              <span class="block text-xs font-mono text-[#7e788b]">One-person project &middot; Unreal Engine</span>
+              <p class="text-[#a7a1b3] text-sm leading-relaxed">
+                Backrooms in Unreal Engine: endless office corridors, fluorescent lights, and the feeling that you
+                have definitely walked past this exact wall before. I built the whole thing myself: environment,
+                lighting and the walkthrough in the video, ai, character controller.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="px-2.5 py-1 text-xs rounded-full bg-[#1f1c29] text-[#a7a1b3] border border-[#2e2a3c]">One-person project</span>
+                <span class="px-2.5 py-1 text-xs rounded-full bg-[#1f1c29] text-[#a7a1b3] border border-[#2e2a3c]">Unreal Engine</span>
+                <span class="px-2.5 py-1 text-xs rounded-full bg-[#1f1c29] text-[#a7a1b3] border border-[#2e2a3c]">Level design</span>
+                <span class="px-2.5 py-1 text-xs rounded-full bg-[#1f1c29] text-[#a7a1b3] border border-[#2e2a3c]">Lighting</span>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-[#2c2838] flex flex-wrap items-center gap-5 text-sm font-medium">
+              <a href="https://www.youtube.com/watch?v=1tsdaUhbhr8" target="_blank" rel="noopener noreferrer"
+                 class="text-pink-300 hover:text-pink-200 transition-colors inline-flex items-center gap-1.5">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <span>Watch on YouTube</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  skills -->
+  <section class="py-20 border-t border-[#2c2838]" id="skills">
+    <div class="max-w-[1140px] mx-auto px-6">
+      <div class="grid lg:grid-cols-12 gap-x-16 gap-y-10">
+        <div class="lg:col-span-4">
+          <h2 class="font-heading font-semibold text-3xl sm:text-4xl text-[#f6f3f8] tracking-tight">
+            Skills
+          </h2>
+        </div>
+
+        <div class="lg:col-span-8 border-t border-[#2c2838]">
+
+          <div class="group py-7 grid sm:grid-cols-12 gap-x-6 gap-y-2 border-b border-[#2c2838]">
+            <h3 class="sm:col-span-4 font-heading font-semibold text-lg text-[#f6f3f8] tracking-tight group-hover:text-pink-300 transition-colors">
+              Unity &amp; C#
+            </h3>
+            <div class="sm:col-span-8 space-y-3">
+              <p class="text-sm text-[#a7a1b3] leading-relaxed">
+                Where I'm most at home. Controllers, interaction systems and VR rigs across five projects.
+              </p>
+              <p class="font-mono text-[11px] text-[#7e788b] leading-relaxed">
+                player controllers / IInteractable systems / New Input System / ScriptableObject events etc
+              </p>
+              <p class="text-xs text-[#8b8598]">
+                Seen in
+                <a href="https://www.youtube.com/watch?v=PW2ryMzk7ks" target="_blank" rel="noopener noreferrer" class="text-pink-300 hover:text-pink-200">One Last Visit</a>
+                and
+                <a href="https://github.com/Zoruasy/VR-ACT" target="_blank" rel="noopener noreferrer" class="text-pink-300 hover:text-pink-200">VR ACT</a>.
+              </p>
+            </div>
+          </div>
+
+          <div class="group py-7 grid sm:grid-cols-12 gap-x-6 gap-y-2 border-b border-[#2c2838]">
+            <h3 class="sm:col-span-4 font-heading font-semibold text-lg text-[#f6f3f8] tracking-tight group-hover:text-pink-300 transition-colors">
+              VR &amp; XR
+            </h3>
+            <div class="sm:col-span-8 space-y-3">
+              <p class="text-sm text-[#a7a1b3] leading-relaxed">
+                VR is unforgiving. If it feels off for a second, the headset comes off. So I design for comfort first and
+                build outward from there.
+              </p>
+              <p class="font-mono text-[11px] text-[#7e788b] leading-relaxed">
+                URP / XR Interaction Toolkit / OpenXR / Quest builds
+              </p>
+              <p class="text-xs text-[#8b8598]">
+                Seen in
+                <a href="https://github.com/Zoruasy/VR-ACT" target="_blank" rel="noopener noreferrer" class="text-pink-300 hover:text-pink-200">VR ACT meditation</a>.
+              </p>
+            </div>
+          </div>
+
+          <div class="group py-7 grid sm:grid-cols-12 gap-x-6 gap-y-2 border-b border-[#2c2838]">
+            <h3 class="sm:col-span-4 font-heading font-semibold text-lg text-[#f6f3f8] tracking-tight group-hover:text-pink-300 transition-colors">
+              Pipeline, Git &amp; tooling
+            </h3>
+            <div class="sm:col-span-8 space-y-3">
+              <p class="text-sm text-[#a7a1b3] leading-relaxed">
+             Commits that  explain themselves!
+              </p>
+              <p class="font-mono text-[11px] text-[#7e788b] leading-relaxed">
+                Git &amp; GitHub / Git LFS / Rider &amp; VS Code / Unity build settings
+              </p>
+              <p class="text-xs text-[#8b8598]">
+                Used in
+                <a href="https://github.com/Zoruasy" target="_blank" rel="noopener noreferrer" class="text-pink-300 hover:text-pink-200">everything I've made</a>.
+              </p>
+            </div>
+          </div>
+
+          <div class="group py-7 grid sm:grid-cols-12 gap-x-6 gap-y-2">
+            <h3 class="sm:col-span-4 font-heading font-semibold text-lg text-[#f6f3f8] tracking-tight group-hover:text-pink-300 transition-colors">
+              Game design
+            </h3>
+            <div class="sm:col-span-8 space-y-3">
+              <p class="text-sm text-[#a7a1b3] leading-relaxed">
+                Designer on Meat me at my bakery. I sketched it, marketed it, tested it untill it played well.
+              </p>
+              <p class="font-mono text-[11px] text-[#7e788b] leading-relaxed">
+                thumbnails / paper prototypes / playtests / tuning
+              </p>
+              <p class="text-xs text-[#8b8598]">
+                Play
+                <a href="https://koala-games.itch.io/meat-me-at-my-bakery" target="_blank" rel="noopener noreferrer" class="text-pink-300 hover:text-pink-200">Meat me at my bakery</a>.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="border-t border-[#2c2838] bg-[#0e0d12] py-16" id="contact">
+  <div class="max-w-[1140px] mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start pb-12 border-b border-[#2c2838]">
+      <div class="md:col-span-7 space-y-4">
+        <h3 class="font-heading font-semibold text-2xl sm:text-3xl text-[#f6f3f8]">
+          Say hi
+        </h3>
+        <p class="text-[#a7a1b3] text-sm sm:text-base leading-relaxed max-w-md">
+          Talking games, VR, or an internship? My inbox is open. I answer faster than UE builds.
+        </p>
+        <div class="pt-1">
+          <a href="mailto:krabritney@gmail.com?subject=Hi%20Britney" class="text-lg sm:text-xl font-medium text-pink-300 hover:text-pink-200 transition-colors inline-flex items-center gap-2 group">
+            <span>krabritney@gmail.com</span>
+            <svg class="w-5 h-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="md:col-span-5 flex flex-col md:items-end justify-between space-y-4">
+        <div class="flex flex-wrap items-center gap-6 text-sm font-medium text-[#a7a1b3]">
+          <a href="https://github.com/Zoruasy" target="_blank" rel="noopener noreferrer" class="hover:text-[#f6f3f8] transition-colors">GitHub</a>
+          <a href="https://koala-games.itch.io" target="_blank" rel="noopener noreferrer" class="hover:text-[#f6f3f8] transition-colors">Itch.io</a>
+          <a href="https://www.youtube.com/@Zoruasy" target="_blank" rel="noopener noreferrer" class="hover:text-[#f6f3f8] transition-colors">YouTube</a>
+        </div>
+        <span class="text-xs text-[#7e788b]">
+              Creative Media &amp; Game Technologies &bull; Netherlands
+            </span>
+      </div>
+    </div>
+
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#7e788b]">
+    </div>
+  </div>
+</footer>
+
+
+
+<!-- Modal 1: Neon Dash (2D Canvas Game) -->
+<div id="modal-neon" class="app-modal fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+  <div class="relative w-full max-w-3xl rounded-2xl bg-[#16141c] border border-[#2c2838] shadow-2xl overflow-hidden flex flex-col">
+    <div class="flex items-center justify-between px-6 py-4 border-b border-[#2c2838] bg-[#110f17]">
+      <div class="flex items-center gap-3">
+        <span class="w-2.5 h-2.5 rounded-full bg-[#f472b6]"></span>
+        <h3 class="font-heading font-semibold text-lg text-[#f6f3f8] tracking-tight">
+          Neon Dash <span class="text-xs font-mono text-pink-300 ml-2 px-2 py-0.5 rounded bg-pink-500/10 border border-pink-500/20">HTML5 Canvas Engine</span>
+        </h3>
+      </div>
+      <button class="modal-close-btn p-2 rounded-lg bg-[#1f1c29] hover:bg-pink-500/20 text-[#a7a1b3] hover:text-pink-300 transition-colors border border-[#2e2a3c] cursor-pointer" data-modal="modal-neon">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+    </div>
+
+    <div class="relative bg-[#0d0c11] flex items-center justify-center select-none overflow-hidden">
+      <canvas id="neon-canvas" width="800" height="360" class="w-full h-auto cursor-pointer block max-h-[380px]"></canvas>
+
+      <div class="absolute top-4 left-6 right-6 flex items-center justify-between pointer-events-none text-xs font-mono">
+        <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#16141c]/80 border border-[#2c2838] backdrop-blur-sm text-[#f6f3f8]">
+          <span>SCORE: <strong id="neon-score" class="text-pink-300 text-sm font-bold">0</strong></span>
+        </div>
+        <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#16141c]/80 border border-[#2c2838] backdrop-blur-sm text-[#a7a1b3]">
+          <span>BEST: <strong id="neon-high-score" class="text-[#f6f3f8] text-sm">0</strong></span>
+        </div>
+      </div>
+
+      <!-- Neon Overlay Idle / Game Over -->
+      <div id="neon-overlay" class="absolute inset-0 flex flex-col items-center justify-center bg-black/65 backdrop-blur-[2px] p-6 text-center">
+        <h4 id="neon-overlay-title" class="font-heading font-bold text-2xl text-white tracking-tight mb-2">
+          Neon Dash: 2D Arcade Runner
+        </h4>
+        <p id="neon-overlay-desc" class="text-sm text-[#a7a1b3] max-w-md mb-6 leading-relaxed">
+          Made with pure vanilla HTML5 Canvas. Tap the screen or press <kbd class="px-2 py-0.5 rounded bg-[#27272a] text-pink-300 border border-[#3f3f46] font-mono text-xs">SPACE</kbd> to jump (Double-jump supported!).
+        </p>
+        <button id="neon-start-btn" class="px-6 py-3 rounded-full bg-[#f472b6] hover:bg-[#f687b3] text-[#120f17] font-semibold text-sm transition-all shadow-md hover:scale-105 active:scale-95 flex items-center gap-2 cursor-pointer">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+          <span id="neon-start-btn-text">Start Run</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="p-4 bg-[#110f17] border-t border-[#2c2838] flex flex-wrap items-center justify-between text-xs text-[#7e788b] gap-2">
+      <span>Controls: <kbd class="px-1.5 py-0.5 rounded bg-[#1f1c29] text-pink-300 font-mono">SPACE</kbd> or Click / Tap Canvas</span>
+      <span class="font-mono text-[#a7a1b3]">Zero external libraries &bull; Pure Canvas 2D</span>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2: Gravity Lab (Physics Simulator) -->
+<div id="modal-gravity" class="app-modal fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+  <div class="relative w-full max-w-3xl rounded-2xl bg-[#16141c] border border-[#2c2838] shadow-2xl overflow-hidden flex flex-col">
+    <div class="flex items-center justify-between px-6 py-4 border-b border-[#2c2838] bg-[#110f17]">
+      <div class="flex items-center gap-3">
+        <span class="w-2.5 h-2.5 rounded-full bg-[#f472b6]"></span>
+        <h3 class="font-heading font-semibold text-lg text-[#f6f3f8] tracking-tight">
+          Gravity Lab <span class="text-xs font-mono text-pink-300 ml-2 px-2 py-0.5 rounded bg-pink-500/10 border border-pink-500/20">Canvas Physics Simulator</span>
+        </h3>
+      </div>
+      <button class="modal-close-btn p-2 rounded-lg bg-[#1f1c29] hover:bg-pink-500/20 text-[#a7a1b3] hover:text-pink-300 transition-colors border border-[#2e2a3c] cursor-pointer" data-modal="modal-gravity">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+    </div>
+
+    <div class="relative bg-[#0d0c11] flex items-center justify-center select-none overflow-hidden">
+      <canvas id="gravity-canvas" width="800" height="380" class="w-full h-auto cursor-grab active:cursor-grabbing block max-h-[380px]"></canvas>
+    </div>
+
+    <!-- Controls Toolbar -->
+    <div class="p-4 bg-[#110f17] border-t border-[#2c2838] flex flex-wrap items-center justify-between gap-4 text-xs">
+      <div class="flex items-center gap-2">
+        <span class="text-[#7e788b]">Gravity:</span>
+        <button class="gravity-mode-btn px-2.5 py-1 rounded bg-[#f472b6] text-[#120f17] font-semibold cursor-pointer" data-mode="normal">Normal</button>
+        <button class="gravity-mode-btn px-2.5 py-1 rounded bg-[#1f1c29] text-[#a7a1b3] hover:text-white border border-[#2e2a3c] cursor-pointer" data-mode="inverted">Inverted</button>
+        <button class="gravity-mode-btn px-2.5 py-1 rounded bg-[#1f1c29] text-[#a7a1b3] hover:text-white border border-[#2e2a3c] cursor-pointer" data-mode="zero">Zero-G</button>
+        <button class="gravity-mode-btn px-2.5 py-1 rounded bg-[#1f1c29] text-[#a7a1b3] hover:text-white border border-[#2e2a3c] cursor-pointer" data-mode="moon">Moon</button>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <button id="gravity-add-shape-btn" class="px-3 py-1.5 rounded-lg bg-[#1f1c29] hover:bg-pink-500/15 text-pink-300 border border-[#2e2a3c] flex items-center gap-1.5 cursor-pointer">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+          <span>Add Body</span>
+        </button>
+        <button id="gravity-reset-btn" class="px-3 py-1.5 rounded-lg bg-[#1f1c29] hover:bg-[#282435] text-[#a7a1b3] hover:text-white border border-[#2e2a3c] flex items-center gap-1.5 cursor-pointer">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+          <span>Reset</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3: Orbital WebXR Viewer -->
+<div id="modal-orbital" class="app-modal fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+  <div class="relative w-full max-w-3xl rounded-2xl bg-[#16141c] border border-[#2c2838] shadow-2xl overflow-hidden flex flex-col">
+    <div class="flex items-center justify-between px-6 py-4 border-b border-[#2c2838] bg-[#110f17]">
+      <div class="flex items-center gap-3">
+        <span class="w-2.5 h-2.5 rounded-full bg-[#f472b6]"></span>
+        <h3 class="font-heading font-semibold text-lg text-[#f6f3f8] tracking-tight">
+          Orbital WebXR 3D Viewer <span class="text-xs font-mono text-pink-300 ml-2 px-2 py-0.5 rounded bg-pink-500/10 border border-pink-500/20">Real-Time Simulation</span>
+        </h3>
+      </div>
+      <button class="modal-close-btn p-2 rounded-lg bg-[#1f1c29] hover:bg-pink-500/20 text-[#a7a1b3] hover:text-pink-300 transition-colors border border-[#2e2a3c] cursor-pointer" data-modal="modal-orbital">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+    </div>
+
+    <div class="relative bg-[#0d0c11] flex items-center justify-center select-none overflow-hidden h-[360px]">
+      <canvas id="orbital-canvas" width="800" height="360" class="w-full h-full cursor-grab active:cursor-grabbing block"></canvas>
+      <div class="absolute bottom-4 left-6 text-xs font-mono text-[#a7a1b3] bg-[#16141c]/80 px-3 py-1.5 rounded-full border border-[#2c2838] backdrop-blur-sm pointer-events-none">
+        Drag mouse to rotate orbit &bull; Scroll to zoom
+      </div>
+    </div>
+
+    <div class="p-4 bg-[#110f17] border-t border-[#2c2838] flex items-center justify-between text-xs text-[#7e788b]">
+      <span>WebXR Device API compatible (Oculus Browser, Chrome Android)</span>
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-pink-300 hover:text-pink-200 font-medium">View Source on GitHub &rarr;</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4: Tactile Hands VR Interaction -->
+<div id="modal-vr" class="app-modal fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+  <div class="relative w-full max-w-2xl rounded-2xl bg-[#16141c] border border-[#2c2838] shadow-2xl overflow-hidden flex flex-col">
+    <div class="flex items-center justify-between px-6 py-4 border-b border-[#2c2838] bg-[#110f17]">
+      <div class="flex items-center gap-3">
+        <span class="w-2.5 h-2.5 rounded-full bg-[#f472b6]"></span>
+        <h3 class="font-heading font-semibold text-lg text-[#f6f3f8] tracking-tight">
+          Tactile Hands VR <span class="text-xs font-mono text-pink-300 ml-2 px-2 py-0.5 rounded bg-pink-500/10 border border-pink-500/20">Interaction Testbed</span>
+        </h3>
+      </div>
+      <button class="modal-close-btn p-2 rounded-lg bg-[#1f1c29] hover:bg-pink-500/20 text-[#a7a1b3] hover:text-pink-300 transition-colors border border-[#2e2a3c] cursor-pointer" data-modal="modal-vr">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+    </div>
+
+    <div class="p-6 bg-[#0e0d12] space-y-6">
+      <p class="text-sm text-[#a7a1b3] leading-relaxed">
+        A standalone VR prototype testing physical tactile affordances without relying on synthetic ray pointers. Test the physical buttons below:
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="p-5 rounded-xl bg-[#16141c] border border-[#2c2838] flex flex-col justify-between space-y-4">
+          <div>
+            <span class="text-xs font-mono text-[#7e788b] uppercase">Spring Switch</span>
+            <h4 class="font-heading font-semibold text-[#f6f3f8] text-base mt-1">Physical Plunger</h4>
+          </div>
+          <button id="vr-btn-push" class="w-full py-4 rounded-xl bg-[#201d2a] hover:bg-pink-500/20 border-2 border-pink-500/30 text-pink-300 font-mono text-sm font-semibold transition-all active:translate-y-1 active:border-pink-400 cursor-pointer shadow-inner">
+            PRESS TO ACTUATE
+          </button>
+          <span id="vr-btn-status" class="text-[11px] font-mono text-[#7e788b] text-center block">Spring: 100% Retracted</span>
+        </div>
+
+        <div class="p-5 rounded-xl bg-[#16141c] border border-[#2c2838] flex flex-col justify-between space-y-4">
+          <div>
+            <span class="text-xs font-mono text-[#7e788b] uppercase">Analog Throttle</span>
+            <h4 class="font-heading font-semibold text-[#f6f3f8] text-base mt-1">Grip Lever</h4>
+          </div>
+          <input type="range" id="vr-lever" min="0" max="100" value="65" class="w-full accent-pink-500 cursor-pointer" />
+          <div class="flex items-center justify-between text-[11px] font-mono text-[#a7a1b3]">
+            <span>Position:</span>
+            <span id="vr-lever-val" class="text-pink-300 font-bold">65%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-4 bg-[#110f17] border-t border-[#2c2838] flex items-center justify-between text-xs text-[#7e788b]">
+      <span>Engineered in Unity with XR Interaction toolkit</span>
+      <button class="open-modal-btn text-pink-300 hover:text-pink-200 cursor-pointer font-medium" data-modal="modal-contact">
+        Request Headset Build &rarr;
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 5: Curriculum Vitae (Resume) -->
+<div id="modal-resume" class="app-modal fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-md overflow-y-auto">
+  <div class="relative w-full max-w-3xl my-8 rounded-2xl bg-[#16141c] border border-[#2c2838] shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
+    <div class="flex items-center justify-between px-6 py-4 border-b border-[#2c2838] bg-[#110f17] sticky top-0 z-10">
+      <div class="flex items-center gap-3">
+        <span class="w-2.5 h-2.5 rounded-full bg-[#f472b6]"></span>
+        <span class="font-heading font-semibold text-[#f6f3f8] text-base">Curriculum Vitae</span>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <button id="resume-print-btn" class="px-3.5 py-1.5 rounded-lg bg-[#1f1c29] hover:bg-[#282435] text-[#f6f3f8] border border-[#2e2a3c] text-xs font-medium flex items-center gap-1.5 transition-colors cursor-pointer">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+          <span>Print / PDF</span>
+        </button>
+        <button class="modal-close-btn p-1.5 rounded-lg bg-[#1f1c29] hover:bg-pink-500/20 text-[#a7a1b3] hover:text-pink-300 transition-colors border border-[#2e2a3c] cursor-pointer" data-modal="modal-resume">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="p-8 sm:p-10 overflow-y-auto space-y-8 text-sm text-[#a7a1b3] bg-[#0e0d12]">
+      <div class="border-b border-[#2c2838] pb-6 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+        <div>
+          <h2 class="font-heading font-bold text-3xl text-white tracking-tight">Eva Vermeer</h2>
+          <p class="text-pink-300 font-medium mt-1">Game Developer &amp; Creative Technologist</p>
+        </div>
+        <div class="text-xs space-y-1 text-[#7e788b]">
+          <div>Enschede, Netherlands (Open to Remote / Hybrid)</div>
+          <div>eva.vermeer@student.portfolio</div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="font-heading font-semibold uppercase tracking-wider text-xs mb-2 text-pink-300">Profile</h3>
+        <p class="leading-relaxed">
+          27-year-old developer finishing a degree in Creative Media &amp; Game Technologies in the Netherlands. Passionate about game physics, tactile mechanics, character controllers in Unity (C#), and modern interactive 3D web applications with Three.js and WebXR. Currently seeking a graduation internship or junior gameplay programming position.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-heading font-semibold uppercase tracking-wider text-xs mb-3 text-pink-300">Education</h3>
+        <div class="border-l-2 border-pink-500/40 pl-4 space-y-1">
+          <div class="flex items-center justify-between text-white font-medium">
+            <span>BSc in Creative Media &amp; Game Technologies (CMGT)</span>
+            <span class="text-xs font-mono text-[#7e788b]">2021 to 2025</span>
+          </div>
+          <p class="text-xs text-pink-300">Saxion University of Applied Sciences, Enschede</p>
+          <p class="text-xs leading-relaxed text-[#7e788b]">
+            Specialization in Gameplay Engineering, 3D Real-time graphics, XR design, and physics programming.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="font-heading font-semibold uppercase tracking-wider text-xs mb-3 text-pink-300">Featured Projects</h3>
+        <div class="space-y-4 text-xs">
+          <div class="p-3.5 rounded-xl bg-[#16141c] border border-[#2c2838] space-y-1">
+            <span class="font-semibold text-white text-sm block">Gravity Lab (Unity 3D / C#)</span>
+            <p class="text-[#a7a1b3]">First-person 3D physics puzzle game with custom character controllers, rigid-body momentum solvers, and modular switches.</p>
+          </div>
+          <div class="p-3.5 rounded-xl bg-[#16141c] border border-[#2c2838] space-y-1">
+            <span class="font-semibold text-white text-sm block">Orbital WebXR Spatial Viewer (Three.js / JavaScript)</span>
+            <p class="text-[#a7a1b3]">Zero-dependency 3D planetary viewer running in standard mobile and desktop browsers with stereoscopic WebXR support.</p>
+          </div>
+          <div class="p-3.5 rounded-xl bg-[#16141c] border border-[#2c2838] space-y-1">
+            <span class="font-semibold text-white text-sm block">Neon Dash (HTML5 Canvas 2D)</span>
+            <p class="text-[#a7a1b3]">Engineered with pure 2D Canvas loops, particle physics systems, and local score persistence without external dependencies.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="font-heading font-semibold uppercase tracking-wider text-xs mb-3 text-pink-300">Technical Stack</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+          <div class="p-3 rounded-lg bg-[#16141c] border border-[#2c2838]">
+            <strong class="text-white block mb-1">Game Engines</strong>
+            <p class="text-[#7e788b]">Unity 2022/2023, C#, XR Toolkit, Physics 3D/2D</p>
+          </div>
+          <div class="p-3 rounded-lg bg-[#16141c] border border-[#2c2838]">
+            <strong class="text-white block mb-1">Web &amp; 3D</strong>
+            <p class="text-[#7e788b]">JavaScript (ES6+), HTML5 Canvas, Three.js, WebGL, Tailwind CSS</p>
+          </div>
+          <div class="p-3 rounded-lg bg-[#16141c] border border-[#2c2838]">
+            <strong class="text-white block mb-1">Tools &amp; Hardware</strong>
+            <p class="text-[#7e788b]">Git/GitHub, Rider, Blender, Meta Quest 3, WebXR API</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="px-6 py-4 bg-[#110f17] border-t border-[#2c2838] flex items-center justify-between text-xs text-[#7e788b]">
+      <span>Available immediately for graduation internships</span>
+      <button class="modal-close-btn px-4 py-1.5 rounded-full bg-[#f472b6] hover:bg-[#f687b3] text-[#120f17] font-semibold text-xs transition-colors cursor-pointer" data-modal="modal-resume">
+        Close CV
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 6: Contact Modal -->
+<div id="modal-contact" class="app-modal fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+  <div class="relative w-full max-w-xl rounded-2xl bg-[#16141c] border border-[#2c2838] shadow-2xl overflow-hidden flex flex-col">
+    <div class="flex items-center justify-between px-6 py-4 border-b border-[#2c2838] bg-[#110f17]">
+      <div class="flex items-center gap-3">
+        <span class="w-2.5 h-2.5 rounded-full bg-[#f472b6]"></span>
+        <h3 class="font-heading font-semibold text-lg text-white tracking-tight">Get in touch</h3>
+      </div>
+      <button class="modal-close-btn p-1.5 rounded-lg bg-[#1f1c29] hover:bg-pink-500/20 text-[#a7a1b3] hover:text-pink-300 transition-colors border border-[#2e2a3c] cursor-pointer" data-modal="modal-contact">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+    </div>
+
+    <div class="p-6 sm:p-8 bg-[#0e0d12]">
+      <div id="contact-form-container">
+        <form id="contact-form" class="space-y-4">
+          <div class="p-3.5 rounded-xl bg-[#16141c] border border-[#2c2838] flex items-center justify-between">
+            <div class="flex items-center gap-2.5 text-xs text-[#a7a1b3]">
+              <svg class="w-4 h-4 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+              <span class="font-mono text-white font-medium">eva.vermeer@student.portfolio</span>
+            </div>
+            <button type="button" id="copy-email-btn" class="px-3 py-1 rounded-lg bg-[#1f1c29] hover:bg-[#282435] text-xs text-pink-300 hover:text-pink-200 border border-[#2e2a3c] flex items-center gap-1.5 transition-colors cursor-pointer">
+              <span id="copy-email-text">Copy</span>
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="text-xs font-mono text-[#7e788b] block mb-1.5 uppercase">Your Name</label>
+              <input type="text" id="contact-name" required placeholder="e.g. Alex van Dijk" class="w-full px-3.5 py-2.5 rounded-xl bg-[#16141c] border border-[#2c2838] focus:border-pink-400 focus:outline-none text-sm text-white placeholder:text-[#52505e]" />
+            </div>
+            <div>
+              <label class="text-xs font-mono text-[#7e788b] block mb-1.5 uppercase">Your Email</label>
+              <input type="email" id="contact-email" required placeholder="alex@studio.nl" class="w-full px-3.5 py-2.5 rounded-xl bg-[#16141c] border border-[#2c2838] focus:border-pink-400 focus:outline-none text-sm text-white placeholder:text-[#52505e]" />
+            </div>
+          </div>
+
+          <div>
+            <label class="text-xs font-mono text-[#7e788b] block mb-1.5 uppercase">Topic</label>
+            <select id="contact-subject" class="w-full px-3.5 py-2.5 rounded-xl bg-[#16141c] border border-[#2c2838] focus:border-pink-400 focus:outline-none text-sm text-white cursor-pointer">
+              <option value="Graduation Internship Opportunity">Graduation Internship Opportunity</option>
+              <option value="Junior Gameplay Developer Role">Junior Gameplay Developer Role</option>
+              <option value="3D WebXR / Three.js Collaboration">3D WebXR / Three.js Collaboration</option>
+              <option value="Game Physics & Mechanics Chat">Game Physics &amp; Mechanics Chat</option>
+              <option value="General Inquiry">General Inquiry</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="text-xs font-mono text-[#7e788b] block mb-1.5 uppercase">Message</label>
+            <textarea id="contact-message" rows="4" required placeholder="Hi Eva, we'd like to talk about your projects or invite you for a virtual coffee..." class="w-full px-3.5 py-2.5 rounded-xl bg-[#16141c] border border-[#2c2838] focus:border-pink-400 focus:outline-none text-sm text-white placeholder:text-[#52505e] resize-none"></textarea>
+          </div>
+
+          <div class="pt-2 flex items-center justify-end gap-3">
+            <button type="button" class="modal-close-btn px-5 py-2.5 rounded-full bg-[#1f1c29] hover:bg-[#282435] text-[#a7a1b3] hover:text-white border border-[#2e2a3c] text-sm font-medium transition-colors cursor-pointer" data-modal="modal-contact">
+              Cancel
+            </button>
+            <button type="submit" class="px-6 py-2.5 rounded-full bg-[#f472b6] hover:bg-[#f687b3] text-[#120f17] font-semibold text-sm transition-all shadow-md flex items-center gap-2 cursor-pointer">
+              <span>Compose Message</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div id="contact-success" class="hidden py-8 text-center space-y-4">
+        <div class="w-14 h-14 rounded-full bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-300 mx-auto">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+        </div>
+        <h4 class="font-heading font-bold text-2xl text-white">Message Ready to Send</h4>
+        <p class="text-sm text-[#a7a1b3] max-w-sm mx-auto leading-relaxed">
+          Click below to launch your default email client with your message drafted.
+        </p>
+        <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
+          <a id="contact-mailto-link" href="#" class="px-6 py-2.5 rounded-full bg-[#f472b6] hover:bg-[#f687b3] text-[#120f17] font-semibold text-sm transition-all shadow-md inline-flex items-center gap-2">
+            <span>Open Email Client</span>
+          </a>
+          <button class="modal-close-btn px-5 py-2.5 rounded-full bg-[#1f1c29] hover:bg-[#282435] text-[#f6f3f8] border border-[#2e2a3c] text-sm font-medium transition-colors cursor-pointer" data-modal="modal-contact">
+            Done
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
